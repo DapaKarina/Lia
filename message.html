@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan untuk Fracilia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message-box">
+            <p id="typedMessage"></p>
+            <button id="toSlideshow" style="display: none;">Intinya...</button>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="assets/sounds/Hindia - Malaikat Berputar di Atas Pencakar Langit (Official Lyric Video) - Hindia (youtube)" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="toSlideshow">Intinya...</button>
+
+    <script>
+        document.getElementById("toSlideshow").addEventListener("click", () => {
+            window.location.href = "slideshow.html";
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
